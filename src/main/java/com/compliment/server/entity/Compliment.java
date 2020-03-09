@@ -18,6 +18,7 @@ public class Compliment {
     private String title;
 
     @Column(name = "compliment_date", nullable = false)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date complimentDate;
 
     public Compliment() {

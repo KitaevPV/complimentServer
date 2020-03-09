@@ -1,6 +1,7 @@
 package com.compliment.server;
 
 import com.compliment.server.config.WebConfig;
+import com.compliment.server.repository.ComplimentRepository;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -23,5 +24,7 @@ public class ApplicationInitializer implements WebApplicationInitializer {
         ServletRegistration.Dynamic servlet = servletContext.addServlet(DISPATHER, new DispatcherServlet(ctx));
         servlet.addMapping("/");
         servlet.setLoadOnStartup(1);
+
+
     }
 }
