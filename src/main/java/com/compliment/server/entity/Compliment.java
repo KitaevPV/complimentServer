@@ -9,10 +9,10 @@ import java.util.Date;
 @Table(name="compliment")
 public class Compliment {
 
-    @Id
+    @javax.persistence.Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    private long id;
+    private Long id;
 
     @Column(name = "title", nullable = false, length = 50)
     private String title;
@@ -24,11 +24,11 @@ public class Compliment {
     public Compliment() {
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

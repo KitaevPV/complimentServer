@@ -4,4 +4,5 @@ import com.compliment.server.entity.Compliment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ComplimentRepository extends JpaRepository<Compliment, Long> {
+    void delete(Long id);
 }
