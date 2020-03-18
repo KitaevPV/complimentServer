@@ -22,7 +22,7 @@ public List<Compliment> getAll() {
 
 @Override
 public Compliment getByID(Long id) {
-        repository.findById(id);
+//        repository.findById(id);
         return repository.getOne(id);
         }
 
