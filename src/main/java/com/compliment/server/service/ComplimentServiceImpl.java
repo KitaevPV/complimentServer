@@ -22,7 +22,8 @@ public List<Compliment> getAll() {
 
 @Override
 public Compliment getByID(Long id) {
-        return repository.findOne(id);
+        repository.findById(id);
+        return repository.getOne(id);
         }
 
 @Override
